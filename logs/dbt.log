@@ -1,0 +1,260 @@
+[0m12:24:21.211648 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8A68C0D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8A5C66B40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8A5C67740>]}
+
+
+============================== 12:24:21.217747 | 35f907db-2e1f-4ab7-8f0c-a1e5773d573b ==============================
+[0m12:24:21.217747 [info ] [MainThread]: Running with dbt=1.12.3
+[0m12:24:21.218742 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\clawyunkai\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt init 2026.08_wild-data-hub-dbt', 'log_path': 'logs'}
+[0m12:24:22.053073 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\clawyunkai\.dbt
+[0m12:25:12.672537 [debug] [MainThread]: Starter project path: D:\FORM - DATA ANALYST\02_Ressources\VSCode_projet\2026.08_wild-data-hub-dbt\.venv\Lib\site-packages\dbt\include\starter_project
+[0m12:25:13.308480 [info ] [MainThread]: Setting up your profile.
+[0m12:27:29.100906 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+
+[0m12:27:29.107054 [error] [MainThread]: Traceback (most recent call last):
+  File "D:\FORM - DATA ANALYST\02_Ressources\VSCode_projet\2026.08_wild-data-hub-dbt\.venv\Lib\site-packages\dbt\cli\requires.py", line 198, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FORM - DATA ANALYST\02_Ressources\VSCode_projet\2026.08_wild-data-hub-dbt\.venv\Lib\site-packages\dbt\cli\requires.py", line 144, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FORM - DATA ANALYST\02_Ressources\VSCode_projet\2026.08_wild-data-hub-dbt\.venv\Lib\site-packages\dbt\cli\main.py", line 504, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "D:\FORM - DATA ANALYST\02_Ressources\VSCode_projet\2026.08_wild-data-hub-dbt\.venv\Lib\site-packages\dbt\task\init.py", line 363, in run
+    self.setup_profile(profile_name)
+  File "D:\FORM - DATA ANALYST\02_Ressources\VSCode_projet\2026.08_wild-data-hub-dbt\.venv\Lib\site-packages\dbt\task\init.py", line 265, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "D:\FORM - DATA ANALYST\02_Ressources\VSCode_projet\2026.08_wild-data-hub-dbt\.venv\Lib\site-packages\dbt\task\init.py", line 182, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "D:\FORM - DATA ANALYST\02_Ressources\VSCode_projet\2026.08_wild-data-hub-dbt\.venv\Lib\site-packages\dbt\task\init.py", line 166, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FORM - DATA ANALYST\02_Ressources\VSCode_projet\2026.08_wild-data-hub-dbt\.venv\Lib\site-packages\dbt\task\init.py", line 132, in generate_target_from_input
+    target[key] = click.prompt(
+                  ^^^^^^^^^^^^^
+  File "D:\FORM - DATA ANALYST\02_Ressources\VSCode_projet\2026.08_wild-data-hub-dbt\.venv\Lib\site-packages\click\termui.py", line 218, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "D:\FORM - DATA ANALYST\02_Ressources\VSCode_projet\2026.08_wild-data-hub-dbt\.venv\Lib\site-packages\click\termui.py", line 201, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m12:27:29.109613 [debug] [MainThread]: Command `dbt init` failed at 12:27:29.109613 after 188.16 seconds
+[0m12:27:29.111527 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8A83D7230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8BF5CC9E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8C15CF350>]}
+[0m12:27:29.112542 [debug] [MainThread]: Flushing usage events
+[0m12:27:30.050262 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:27:36.545006 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000246F4EBF590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000246F4EBF200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000246F4EBCE60>]}
+
+
+============================== 12:27:36.550748 | 3a6750c1-4433-48d9-b33d-833e9a29eee1 ==============================
+[0m12:27:36.550748 [info ] [MainThread]: Running with dbt=1.12.3
+[0m12:27:36.551992 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\clawyunkai\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt init 2026.08_wild-data-hub-dbt', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m12:27:46.722758 [info ] [MainThread]: A project called wild_data_hub already exists here.
+[0m12:27:46.723756 [debug] [MainThread]: Command `dbt init` succeeded at 12:27:46.723756 after 10.35 seconds
+[0m12:27:46.724753 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000246F4E88B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000246F4E8A840>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000246F4E88BF0>]}
+[0m12:27:46.724753 [debug] [MainThread]: Flushing usage events
+[0m12:27:47.553726 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:29:23.555109 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5D8672870>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5D472E6F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5D673ADB0>]}
+
+
+============================== 12:29:23.566370 | 8d0c1aa0-21ee-4c83-9bec-d5a5f87f8660 ==============================
+[0m12:29:23.566370 [info ] [MainThread]: Running with dbt=1.12.3
+[0m12:29:23.566370 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\clawyunkai\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt init 2026.08_wild-data-hub-db', 'log_path': 'logs'}
+[0m12:29:41.179535 [info ] [MainThread]: A project called wild_data_hub already exists here.
+[0m12:29:41.180608 [debug] [MainThread]: Command `dbt init` succeeded at 12:29:41.180608 after 17.79 seconds
+[0m12:29:41.180608 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5D67106E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5D8740590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5D35BF050>]}
+[0m12:29:41.180608 [debug] [MainThread]: Flushing usage events
+[0m12:29:42.090034 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:30:47.517976 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C282842540>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C280D6E240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C280983620>]}
+
+
+============================== 12:30:47.528555 | 35d47373-715f-4765-a32a-f2be797c9909 ==============================
+[0m12:30:47.528555 [info ] [MainThread]: Running with dbt=1.12.3
+[0m12:30:47.529564 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\clawyunkai\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt init wild_data_hub', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m12:30:47.562127 [debug] [MainThread]: Starter project path: D:\FORM - DATA ANALYST\02_Ressources\VSCode_projet\2026.08_wild-data-hub-dbt\.venv\Lib\site-packages\dbt\include\starter_project
+[0m12:30:48.169836 [info ] [MainThread]: Setting up your profile.
+[0m12:32:56.141567 [info ] [MainThread]: Profile wild_data_hub written to C:\Users\clawyunkai\.dbt\profiles.yml using target's profile_template.yml and your supplied values.
+[0m12:32:56.201982 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m12:32:56.203122 [info ] [MainThread]: dbt version: 1.12.3
+[0m12:32:56.203122 [info ] [MainThread]: python version: 3.12.10
+[0m12:32:56.204127 [info ] [MainThread]: python path: D:\FORM - DATA ANALYST\02_Ressources\VSCode_projet\2026.08_wild-data-hub-dbt\.venv\Scripts\python.exe
+[0m12:32:56.204127 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m12:32:56.308215 [info ] [MainThread]: Using profiles dir at C:\Users\clawyunkai\.dbt
+[0m12:32:56.312719 [info ] [MainThread]: Using profiles.yml file at C:\Users\clawyunkai\.dbt\profiles.yml
+[0m12:32:56.314227 [info ] [MainThread]: Using dbt_project.yml file at D:\FORM - DATA ANALYST\02_Ressources\VSCode_projet\2026.08_wild-data-hub-dbt\wild_data_hub\dbt_project.yml
+[0m12:32:56.315240 [info ] [MainThread]: adapter type: bigquery
+[0m12:32:56.316750 [info ] [MainThread]: adapter version: 1.12.0
+[0m12:32:56.470847 [info ] [MainThread]: Configuration:
+[0m12:32:56.470847 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:32:56.471882 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:32:56.471882 [info ] [MainThread]: Required dependencies:
+[0m12:32:56.472918 [debug] [MainThread]: Executing "git --help"
+[0m12:32:56.587725 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:32:56.588735 [debug] [MainThread]: STDERR: "b''"
+[0m12:32:56.588735 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:32:56.589732 [info ] [MainThread]: Connection:
+[0m12:32:56.590240 [info ] [MainThread]:   method: service-account
+[0m12:32:56.590240 [info ] [MainThread]:   database: data-quest-clawyunkai
+[0m12:32:56.590746 [info ] [MainThread]:   execution_project: data-quest-clawyunkai
+[0m12:32:56.590746 [info ] [MainThread]:   schema: dbt_dev
+[0m12:32:56.590746 [info ] [MainThread]:   location: US
+[0m12:32:56.592262 [info ] [MainThread]:   priority: interactive
+[0m12:32:56.592262 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m12:32:56.593324 [info ] [MainThread]:   reservation: None
+[0m12:32:56.593324 [info ] [MainThread]:   impersonate_service_account: None
+[0m12:32:56.594321 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m12:32:56.594832 [info ] [MainThread]:   job_retries: 1
+[0m12:32:56.595996 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m12:32:56.596987 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m12:32:56.598122 [info ] [MainThread]:   job_link_info_level_log: False
+[0m12:32:56.598122 [info ] [MainThread]:   timeout_seconds: 300
+[0m12:32:56.599145 [info ] [MainThread]:   client_id: None
+[0m12:32:56.599145 [info ] [MainThread]:   token_uri: None
+[0m12:32:56.599145 [info ] [MainThread]:   compute_region: None
+[0m12:32:56.600153 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m12:32:56.600153 [info ] [MainThread]:   gcs_bucket: None
+[0m12:32:56.601169 [info ] [MainThread]:   dataproc_batch: None
+[0m12:32:56.601169 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m12:32:57.918511 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m12:32:57.918511 [debug] [MainThread]: On debug: select 1 as id
+[0m12:32:57.919509 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:32:58.591113 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m12:32:58.592115 [info ] [MainThread]: [31m1 check failed:[0m
+[0m12:32:58.592115 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  Unable to generate access token, if you're using impersonate_service_account, make sure your initial account has the "roles/iam.serviceAccountTokenCreator" role on the account you are trying to impersonate.
+  
+  ('invalid_grant: Invalid JWT Signature.', {'error': 'invalid_grant', 'error_description': 'Invalid JWT Signature.'})
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m12:32:58.593337 [info ] [MainThread]: Your new dbt project "wild_data_hub" was created!
+Initialized new project in D:\FORM - DATA ANALYST\02_Ressources\VSCode_projet\2026.08_wild-data-hub-dbt\wild_data_hub\wild_data_hub
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m12:32:58.593337 [info ] [MainThread]: [31mYour profile may need adjustments. You can find the logs of `dbt debug` above[0m
+[0m12:32:58.594371 [debug] [MainThread]: Command `dbt init` succeeded at 12:32:58.594371 after 131.25 seconds
+[0m12:32:58.595404 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m12:32:58.595404 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C280A5ADB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C29BEBECF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C282A14800>]}
+[0m12:32:58.596818 [debug] [MainThread]: Flushing usage events
+[0m12:32:59.495848 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:37:52.051292 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002618F4F9E50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002618D47E240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002618D601FA0>]}
+
+
+============================== 16:37:52.060887 | cc4e1696-3f48-42c4-b4fa-85c4ddcf0044 ==============================
+[0m16:37:52.060887 [info ] [MainThread]: Running with dbt=1.12.3
+[0m16:37:52.061889 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Chris-MSI-STEALTH\\.dbt', 'invocation_command': 'dbt init wild_data_hub', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m16:37:52.680086 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\Chris-MSI-STEALTH\.dbt
+[0m16:37:52.683078 [info ] [MainThread]: A project called wild_data_hub already exists here.
+[0m16:37:52.683078 [debug] [MainThread]: Command `dbt init` succeeded at 16:37:52.683078 after 0.75 seconds
+[0m16:37:52.684092 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002618DB75CA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002618DB75790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002618DB75D30>]}
+[0m16:37:52.684092 [debug] [MainThread]: Flushing usage events
+[0m16:37:53.265694 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:40:22.737714 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002247E0CA720>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002247C001490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002247C003C20>]}
+
+
+============================== 16:40:22.747175 | e4a07fdb-c5c9-488f-878e-7d6042391631 ==============================
+[0m16:40:22.747175 [info ] [MainThread]: Running with dbt=1.12.3
+[0m16:40:22.748384 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Chris-MSI-STEALTH\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt init wild_data_hub', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m16:40:22.853021 [debug] [MainThread]: Starter project path: E:\FORM - DATA ANALYST\02_Ressources\VSCode_projet\2026.08_wild-data-hub-dbt\.venv\Lib\site-packages\dbt\include\starter_project
+[0m16:40:23.446665 [info ] [MainThread]: Setting up your profile.
+[0m16:41:52.516224 [info ] [MainThread]: Profile wild_data_hub written to C:\Users\Chris-MSI-STEALTH\.dbt\profiles.yml using target's profile_template.yml and your supplied values.
+[0m16:42:02.556474 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m16:42:02.557474 [info ] [MainThread]: dbt version: 1.12.3
+[0m16:42:02.557474 [info ] [MainThread]: python version: 3.12.0
+[0m16:42:02.559065 [info ] [MainThread]: python path: E:\FORM - DATA ANALYST\02_Ressources\VSCode_projet\2026.08_wild-data-hub-dbt\.venv\Scripts\python.exe
+[0m16:42:02.560155 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m16:42:02.625722 [info ] [MainThread]: Using profiles dir at C:\Users\Chris-MSI-STEALTH\.dbt
+[0m16:42:02.626721 [info ] [MainThread]: Using profiles.yml file at C:\Users\Chris-MSI-STEALTH\.dbt\profiles.yml
+[0m16:42:02.626721 [info ] [MainThread]: Using dbt_project.yml file at E:\FORM - DATA ANALYST\02_Ressources\VSCode_projet\2026.08_wild-data-hub-dbt\wild_data_hub\dbt_project.yml
+[0m16:42:02.627721 [info ] [MainThread]: adapter type: bigquery
+[0m16:42:02.627721 [info ] [MainThread]: adapter version: 1.12.0
+[0m16:42:02.713777 [info ] [MainThread]: Configuration:
+[0m16:42:02.713777 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:42:02.714785 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m16:42:02.715302 [info ] [MainThread]: Required dependencies:
+[0m16:42:02.715302 [debug] [MainThread]: Executing "git --help"
+[0m16:42:02.721303 [info ] [MainThread]:  - git [[31mERROR[0m]
+
+[0m16:42:02.721303 [info ] [MainThread]: Connection:
+[0m16:42:02.722301 [info ] [MainThread]:   method: service-account
+[0m16:42:02.722301 [info ] [MainThread]:   database: data-quest-clawyunkai
+[0m16:42:02.723314 [info ] [MainThread]:   execution_project: data-quest-clawyunkai
+[0m16:42:02.723314 [info ] [MainThread]:   schema: dbt_dev
+[0m16:42:02.723314 [info ] [MainThread]:   location: US
+[0m16:42:02.724302 [info ] [MainThread]:   priority: interactive
+[0m16:42:02.724302 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m16:42:02.725314 [info ] [MainThread]:   reservation: None
+[0m16:42:02.725314 [info ] [MainThread]:   impersonate_service_account: None
+[0m16:42:02.726303 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m16:42:02.727301 [info ] [MainThread]:   job_retries: 1
+[0m16:42:02.727301 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m16:42:02.727301 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m16:42:02.728804 [info ] [MainThread]:   job_link_info_level_log: False
+[0m16:42:02.728804 [info ] [MainThread]:   timeout_seconds: 300
+[0m16:42:02.729809 [info ] [MainThread]:   client_id: None
+[0m16:42:02.729809 [info ] [MainThread]:   token_uri: None
+[0m16:42:02.730809 [info ] [MainThread]:   compute_region: None
+[0m16:42:02.730809 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m16:42:02.733316 [info ] [MainThread]:   gcs_bucket: None
+[0m16:42:02.733316 [info ] [MainThread]:   dataproc_batch: None
+[0m16:42:02.734821 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m16:42:02.982776 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m16:42:02.983790 [debug] [MainThread]: On debug: select 1 as id
+[0m16:42:02.983790 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:42:03.326053 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m16:42:03.326053 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m16:42:03.327047 [info ] [MainThread]: Error from git --help: Could not find command, ensure it is in the user's PATH and that the user has permissions to run it: "git"
+
+[0m16:42:03.327047 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  Unable to generate access token, if you're using impersonate_service_account, make sure your initial account has the "roles/iam.serviceAccountTokenCreator" role on the account you are trying to impersonate.
+  
+  ('invalid_grant: Invalid JWT Signature.', {'error': 'invalid_grant', 'error_description': 'Invalid JWT Signature.'})
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m16:42:03.328046 [info ] [MainThread]: Your new dbt project "wild_data_hub" was created!
+Initialized new project in E:\FORM - DATA ANALYST\02_Ressources\VSCode_projet\2026.08_wild-data-hub-dbt\wild_data_hub\wild_data_hub
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m16:42:03.328046 [info ] [MainThread]: [31mYour profile may need adjustments. You can find the logs of `dbt debug` above[0m
+[0m16:42:03.330125 [debug] [MainThread]: Command `dbt init` succeeded at 16:42:03.330125 after 100.70 seconds
+[0m16:42:03.331120 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m16:42:03.331120 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002247C0A9190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002247F23F110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002247C6B5550>]}
+[0m16:42:03.332625 [debug] [MainThread]: Flushing usage events
+[0m16:42:03.920102 [debug] [MainThread]: An error was encountered while trying to flush usage events
